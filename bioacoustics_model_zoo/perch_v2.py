@@ -121,7 +121,7 @@ class Perch2(TensorFlowModelWithPytorchClassifier):
             if version is None:
                 version = 1  # latest CPU-compatible as of Oct 2025
             tested_versions = (1,)  # as of Jan 2026
-            tfhub_path = f"https://www.kaggle.com/models/google/bird-vocalization-classifier/tensorFlow2/perch_v2_cpu/{version}"
+            tfhub_path = f"google/bird-vocalization-classifier/tensorFlow2/perch_v2_cpu"
 
         self.device = device
         self.version = version
