@@ -123,8 +123,8 @@ class Perch2(TensorFlowModelWithPytorchClassifier):
             tested_versions = (1,)  # as of Jan 2026
            # tfhub_path = f"google/bird-vocalization-classifier/tensorFlow2/perch_v2_cpu"
             import kagglehub
-           # tfhub_path = kagglehub.model_download("google/bird-vocalization-classifier/tensorFlow2/perch_v2_cpu")
-            tfhub_path = "C:\\Users\\placea\\.cache\\kagglehub\\models\\google\\bird-vocalization-classifier\\tensorFlow2\\perch_v2_cpu\\1"
+            tfhub_path = kagglehub.model_download("google/bird-vocalization-classifier/tensorFlow2/perch_v2_cpu")
+           # tfhub_path = "C:\\Users\\placea\\.cache\\kagglehub\\models\\google\\bird-vocalization-classifier\\tensorFlow2\\perch_v2_cpu\\1"
         
         self.device = device
         self.version = version
